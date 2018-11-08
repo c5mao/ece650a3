@@ -335,7 +335,6 @@ int parse_line(string line){
 int main(){
 	string line;
 	int error;
-    int i=10;
 	while(1){
 	    try{
    	        getline(cin, line);
