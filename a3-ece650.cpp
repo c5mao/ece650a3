@@ -60,7 +60,7 @@ int main (int argc, char **argv)
 
     string str[4];
 
-    argv0[0] = (char*)"rgen.exe";
+    argv0[0] = (char*)"./rgen";
     argv0[1] = (char*)"-s";
     str[0] = to_string(sk);
     argv0[2] = (char*)str[0].c_str();
@@ -79,7 +79,7 @@ int main (int argc, char **argv)
     argv1[1] = (char*)"./a1-ece650.py";
     argv1[2] = nullptr;
 
-    argv2[0] = (char*)"a2-ece650.exe";
+    argv2[0] = (char*)"./a2-ece650";
     argv2[1] = nullptr;
 
     pid_t child_pid;
