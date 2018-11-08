@@ -15,5 +15,5 @@ add_executable(a2-ece650 a2-ece650.cpp )
 add_executable(a3-ece650 a3-ece650.cpp )
 
 # create the executable for tests
-install(PROGRAMS a1-ece650.py DESTINATION bin)
+install(PROGRAMS a1-ece650.py intersect.py DESTINATION bin)
 install(TARGETS rgen a2-ece650 a3-ece650 RUNTIME DESTINATION bin)
