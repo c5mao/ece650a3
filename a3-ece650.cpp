@@ -116,7 +116,7 @@ int main (int argc, char **argv)
         close(pipe2[1]);
 
         // start a1 process
-        execv ("/bin/python", argv1);
+        execv ("python", argv1);
     }
     kids.push_back(child_pid);
 
