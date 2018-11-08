@@ -12,8 +12,6 @@ using namespace std;
 int main (int argc, char **argv)
 {
     string cvalue;
-    int cint_value;
-    int index;
     int c;
     int sk=10;
     int nk=5;
@@ -159,8 +157,6 @@ int main (int argc, char **argv)
         cout << line << endl;
     }
 
-
-    int res1,res2,res3;
     kill(kids[0], SIGKILL);
     kill(kids[1], SIGKILL);
     kill(kids[2], SIGKILL);
