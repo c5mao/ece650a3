@@ -75,7 +75,7 @@ int main (int argc, char **argv)
     argv0[8] = (char*)str[3].c_str();
     argv0[9] = nullptr;
 
-    argv1[0] = (char*)"\bin\python";
+    argv1[0] = (char*)"python";
     argv1[1] = (char*)"--version";
     //argv1[1] = (char*)"a1-ece650.py";
     argv1[2] = nullptr;
@@ -117,7 +117,7 @@ int main (int argc, char **argv)
         close(pipe2[1]);
 
         // start a1 process
-        execv ("\bin\python", argv1);
+        execv ("python", argv1);
     }
     kids.push_back(child_pid);
 
