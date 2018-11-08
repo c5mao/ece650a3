@@ -97,7 +97,7 @@ int main (int argc, char **argv)
         close(pipe1[1]);
 
         // start a1 process
-        execv ("rgen.exe", argv0);
+        execv ("./rgen", argv0);
     }
     kids.push_back(child_pid);
 
@@ -132,7 +132,7 @@ int main (int argc, char **argv)
         close(pipe2[1]);
 
         // start a2 process
-        execv ("a2-ece650.exe", argv2);
+        execv ("./a2-ece650", argv2);
     }
     kids.push_back(child_pid);
     
