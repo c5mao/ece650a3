@@ -97,7 +97,7 @@ int main (int argc, char **argv)
         close(pipe1[1]);
 
         // start a1 process
-        execv ("./rgen", argv0);
+        //execv ("./rgen", argv0);
     }
     kids.push_back(child_pid);
 
@@ -138,6 +138,7 @@ int main (int argc, char **argv)
     
     child_pid = 0;
 
+    dup2(pipe1[1], STDOUT_FILENO);
     close(pipe1[1]);     // Close this too!
     close(pipe1[0]);
     // redirect stdin from the pipe write end
