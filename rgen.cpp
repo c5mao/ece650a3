@@ -13,7 +13,6 @@ using namespace std;
 int main (int argc, char **argv)
 {
     string cvalue;
-    int cint_value;
     int c;
     int sk=10;
     int nk=5;
