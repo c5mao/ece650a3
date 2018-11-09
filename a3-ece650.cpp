@@ -116,9 +116,7 @@ int main (int argc, char **argv)
         close(pipe2[1]);
 
         // start a1 process
-        cout << "running" << endl;
         execv ("/usr/bin/python", argv1);
-        cout << "running fail" << endl;
     }
     kids.push_back(child_pid);
 
