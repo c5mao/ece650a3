@@ -1,5 +1,4 @@
 import sys
-a1ece650 = __import__("a1-ece650")
 
 class Point(object):
     def __init__ (self, x, y):
@@ -190,49 +189,3 @@ if __name__ == '__main__':
     p1=[]
     p2=[]
     p3=[]
-    p1.append(Point (2, -1))
-    p1.append(Point (2, 2))
-    p1.append(Point (5, 5))
-    p1.append(Point (5, 6))
-    p1.append(Point (3, 8))
-    p2.append(Point (4, 2))
-    p2.append(Point (4, 8))
-    p3.append(Point (1, 1))
-    p3.append(Point (3, 3))
-
-    p=[p1,p2,p3]
-
-    l1=[]
-    l2=[]
-    l3=[]
-    l1.append(Line (p1[0], p1[1]))
-    l1.append(Line (p1[1], p1[2]))
-    l1.append(Line (p1[2], p1[3]))
-    l1.append(Line (p1[3], p1[4]))
-    l2.append(Line (p2[0], p2[1]))
-    l3.append(Line (p3[0], p3[1]))
-
-    #print intersect(l1[0],l1[1])
-
-    l=[l1,l2,l3]
-
-    db_list=[]
-    db_list.append(a1ece650.street_object('1st',p1,l1))
-    db_list.append(a1ece650.street_object('2nd',p2,l2))
-    db_list.append(a1ece650.street_object('3rd',p3,l3))
-
-    print db_list
-    pres_v_dic={}
-    global_v_dic={}
-    pres_e_dic=[]
-
-    db_list2=[]
-    #db_list2.append(a1ece650.street_object('1st',p1,l1))
-    db_list2.append(a1ece650.street_object('2nd',p2,l2))
-    db_list2.append(a1ece650.street_object('3rd',p3,l3))
-
-
-    pres_v_dic,pre_e_dic,global_v_dic=generate_graph(db_list,pres_v_dic,pres_e_dic,global_v_dic)
-    pres_v_dic={}
-    pres_e_dic=[]
-    pres_v_dic,pre_e_dic,global_v_dic=generate_graph(db_list2,pres_v_dic,pres_e_dic,global_v_dic)
