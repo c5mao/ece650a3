@@ -1,6 +1,6 @@
 import sys
 import re
-#import intersect
+import intersect
 
 # YOUR CODE GOES HERE
 #Define the clase structure of database, include a name space and a coordination set x and y
