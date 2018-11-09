@@ -76,7 +76,7 @@ int main (int argc, char **argv)
     argv0[9] = nullptr;
 
     argv1[0] = (char*)"/usr/bin/python";
-    argv1[0] = (char*)"./a1-ece650.py";
+    argv1[1] = (char*)"./a1-ece650.py";
     argv1[2] = nullptr;
 
     argv2[0] = (char*)"./a2-ece650";
@@ -117,7 +117,7 @@ int main (int argc, char **argv)
 
         // start a1 process
         cout << "running" << endl;
-        execvp ("/usr/bin/python", argv1);
+        execv ("/usr/bin/python", argv1);
         cout << "running fail" << endl;
     }
     kids.push_back(child_pid);
