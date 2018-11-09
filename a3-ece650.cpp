@@ -143,7 +143,6 @@ int main (int argc, char **argv)
     close(pipe1[1]);     // Close this too!
     close(pipe1[0]);
     // redirect stdin from the pipe write end
-    dup2(pipe2[0], STDIN_FILENO);
     dup2(pipe2[1], STDOUT_FILENO);
     close(pipe2[0]);
     close(pipe2[1]);
