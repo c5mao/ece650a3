@@ -324,7 +324,7 @@ int parse_line(string line){
     	printShortestDistance_test(node_list, source, dest, v);
     	error = 1;
     }else{
-    	cerr << line << endl;
+    	cerr << "Error: from A1:" << line << endl;
     	error = 1;
     }
 

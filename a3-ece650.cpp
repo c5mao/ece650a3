@@ -1,10 +1,11 @@
 // adapted from https://www.gnu.org/software/libc/manual/html_node/Example-of-Getopt.html
-#include <unistd.h>
 #include <iostream>
+#include <unistd.h>
 #include <vector>
 #include <string.h>
 #include <sys/wait.h>
 #include <signal.h>
+
 using namespace std;
 
 /// main() must be declared with arguments
@@ -27,14 +28,17 @@ int main (int argc, char **argv)
         case 's':
             cvalue = optarg;
             sk = atoi(cvalue.c_str());
+            if (sk<2) sk=10;
             break;
         case 'n':
             cvalue = optarg;
             nk = atoi(cvalue.c_str());
+            if (nk<1) nk=5;
             break;
         case 'l':
             cvalue = optarg;
             lk = atoi(cvalue.c_str());
+            if (lk<5) lk=5;
             break;
         case 'c':
             cvalue = optarg;

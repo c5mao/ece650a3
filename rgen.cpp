@@ -34,14 +34,17 @@ int main (int argc, char **argv)
         case 's':
             cvalue = optarg;
             sk = atoi(cvalue.c_str());
+            if (sk<2) sk=10;
             break;
         case 'n':
             cvalue = optarg;
             nk = atoi(cvalue.c_str());
+            if (nk<1) nk=5;
             break;
         case 'l':
             cvalue = optarg;
             lk = atoi(cvalue.c_str());
+            if (lk<5) lk=5;
             break;
         case 'c':
             cvalue = optarg;
