@@ -1,5 +1,5 @@
 import sys
-#import re
+import re
 import intersect
 
 # YOUR CODE GOES HERE
