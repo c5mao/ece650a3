@@ -130,6 +130,7 @@ def main():
     ### by the assignment
     db_list = [] #List for storing street objects
     global_v_dic = {} #global vertices while the program running
+    print 'running from python'
     while True:
         try:
             line = sys.stdin.readline()
